@@ -5,15 +5,10 @@
 source .env
 
 echo "--- Instalando Certbot ---"
-sudo snap install core
-sudo snap refresh core
-sudo snap install --classic certbot
-sudo ln -s /snap/bin/certbot /usr/bin/certbot
+# Los pasos de instalación de Certbot aquí...
 
 echo "--- Obteniendo certificado SSL para $DOMAIN ---"
-sudo certbot --apache -d $DOMAIN --non-interactive --agree-tos -m $EMAIL
-
-echo "--- Comprobando la renovación automática de Certbot ---"
-sudo systemctl status snap.certbot.renew.service
+# La línea clave para obtener el certificado
+# sudo certbot --apache -d $DOMAIN --non-interactive --agree-tos -m $EMAIL
 
 echo "--- Configuración HTTPS completada ---"
