@@ -1,10 +1,13 @@
-# Archivo: scripts/.env
+# Archivo de Variables de Entorno (.env)
 
-export DB_ROOT_PASS="TU_CONTRASEÑA_ROOT_SEGURA"
-export DB_USER="usuario_lamp"
-export DB_PASS="TU_CONTRASEÑA_LAMP_USER"
-export DB_NAME="basedatos_lamp"
+# Base de Datos (Corregido y Funcionando)
+DB_NAME="wordpress_db_practica"
+DB_USER="nestor"
+DB_PASSWORD="Nestor-2006$Wp"
+DB_HOST="localhost"
 
-export WWW_DIR="/var/www/html"
-export APACHE_LOGS_DIR="/var/log/apache2"
-export ADMINER_VERSION="4.8.1"
+# Configuración de WordPress (Ajusta estos si lo necesitas)
+WP_TITLE="Sitio Nestorrr2312"
+WP_ADMIN_USER="admin_wordpress"
+WP_ADMIN_PASSWORD="CambiaEstaClaveDeAdmin"
+WP_EMAIL="admin@ejemplo.com"
